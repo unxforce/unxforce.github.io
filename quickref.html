@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>D&D 5e quick reference</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/quickref.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script>
+</head>
+<body class="page-background">
+    <div class="page fontsize" data-size="fullscreen">
+
+        <!-- Movement section -->
+        <div id="section-movement" class="section-container">
+            <div class="section-title">
+                移動 <span class="float-right">由移動速度所限制</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    你可以在你的戰鬥輪中隨時移動（在行動之前、之後或期間）。
+                </div>
+                <div class="section-row" id="basic-movement">
+                </div>
+            </div>
+        </div>
+
+        <!-- Action section -->
+        <div id="section-action" class="section-container">
+            <div class="section-title">
+                動作 <span class="float-right">1/戰鬥輪</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    您還可以免費與環境中的一件物件或特徵進行互動。
+                </div>
+                <div class="section-row" id="basic-actions"></div>
+            </div>
+        </div>
+
+        <!-- Bonus action section -->
+        <div id="section-bonus-action" class="section-container">
+            <div class="section-title">
+                附贈動作 <span class="float-right">max. 1/戰鬥輪</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    只有當特殊能力、法術或能力表明您可以執行某項附贈動作時，您才可以執行該附贈動作。
+                </div>
+                <div class="section-row" id="basic-bonus-actions"></div>
+            </div>
+        </div>
+
+        <!-- Reaction section -->
+        <div id="section-reaction" class="section-container">
+            <div class="section-title">
+                反應 <span class="float-right">max. 1/回合</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    反應是對某種觸發因素的即時反應，這可能發生在你的戰鬥輪或其他人的戰鬥輪。
+                </div>
+                <div class="section-row" id="basic-reactions"></div>
+            </div>
+        </div>
+
+        <!-- Condition section -->
+        <div id="section-condition" class="section-container">
+            <div class="section-title">
+                狀態
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    狀態會以不同方式更改你的能力，並且可能是由於法術、職業特性、怪物的攻擊或其他效果而產生的。
+                </div>
+                <div class="section-row" id="basic-conditions"></div>
+            </div>
+        </div>
+        
+        <!-- Environmental section -->
+        <div id="section-environment" class="section-container">
+            <div class="section-title">
+                環境效果
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    視力模糊的效果可能會嚴重阻礙大多數冒險任務。
+                </div>
+                <div class="section-row" id="environment-obscurance"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    環境光的存在或不存在會產生三類明亮度。
+                </div>
+                <div class="section-row" id="environment-light"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    有些生物具有非凡的感官，使它們能夠感知周圍的環境。
+                </div>
+                <div class="section-row" id="environment-vision"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    障礙物可以在戰鬥中提供掩護，使目標更難受到傷害。
+                </div>
+                <div class="section-row" id="environment-cover"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-dialog modalsize">
+            <div class="section-container modal-container" id="modal-container">
+                <div class="section-title" id="modal-title">
+                    Modal title<span class="float-right">Action</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-row section-subtitle text" id="modal-subtitle">
+                        Subtitle
+                    </div>
+                    <div class="section-row text">
+                        <div id="modal-bullets">
+                        </div>
+                    </div>
+                    <div class="section-row text" id="modal-reference">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data -->
+    <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
+</body>
+</html>
